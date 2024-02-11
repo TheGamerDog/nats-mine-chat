@@ -42,5 +42,5 @@ soon...
 
 Discord/Telegram: @TheGamerDog
 
-¯\_(ツ)_/¯
+¯\\_(ツ)_/¯
 
