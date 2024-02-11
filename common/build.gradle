@@ -1,0 +1,23 @@
+plugins {
+    id "java-library"
+    id "jacoco"
+    id "org.jetbrains.kotlin.plugin.serialization" version "$kotlinVersion"
+}
+
+test {
+    useJUnit()
+}
+
+jacocoTestReport {
+    dependsOn test
+}
+
+dependencies {
+    compileOnly libs.adventure
+
+    api libs.serialization
+    api libs.kaml
+
+    testImplementation libs.juint
+    testImplementation libs.easymock
+}

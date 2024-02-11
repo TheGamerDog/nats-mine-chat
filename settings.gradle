@@ -1,0 +1,4 @@
+rootProject.name = "nats-mine-chat"
+
+// TODO: Other api`s
+include "common", "bukkit"

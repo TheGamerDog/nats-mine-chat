@@ -1,0 +1,13 @@
+[versions]
+juint = "4.13.2"
+easymock = "5.1.0"
+adventure = "4.13.0"
+serialization = "1.6.0"
+kaml = "0.56.0"
+
+[libraries]
+juint = { group = "junit", name = "junit", version.ref = "juint" }
+easymock = { group = "org.easymock", name = "easymock", version.ref = "easymock" }
+adventure = { group = "net.kyori", name = "adventure-api", version.ref = "adventure" }
+serialization = { group = "org.jetbrains.kotlinx", name = "kotlinx-serialization-json", version.ref = "serialization" }
+kaml = { group = "com.charleskorn.kaml", name = "kaml", version.ref = "kaml" }

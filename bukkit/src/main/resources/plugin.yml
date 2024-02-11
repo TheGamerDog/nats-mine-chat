@@ -1,0 +1,8 @@
+name: NatsChat
+version: ${version}
+main: ru.thegamerdog.natschat.bukkit.NCBootstrap
+authors: [TheGamerDog]
+website: https://github.com/TheGamerDog/nats-mine-chat
+commands:
+  nats:
+    description: "nats"

@@ -1,0 +1,4 @@
+natsIp: localhost
+natsPort: 4222
+channels:
+  - test
