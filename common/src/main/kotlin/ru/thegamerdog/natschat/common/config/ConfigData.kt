@@ -9,3 +9,4 @@ data class ConfigData(
 
     val channels: ArrayList<String>
 )
+

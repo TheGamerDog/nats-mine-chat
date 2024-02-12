@@ -13,10 +13,19 @@ jacocoTestReport {
 }
 
 dependencies {
-    compileOnly libs.adventure
-
     api libs.serialization
     api libs.kaml
+
+    api(libs.adventure) {
+        exclude(module: "adventure-bom")
+        exclude(module: "checker-qual")
+        exclude(module: "annotations")
+    }
+
+    api(libs.adventureText) {
+        exclude(module: "adventure-bom")
+        exclude(module: "adventure-api")
+    }
 
     testImplementation libs.juint
     testImplementation libs.easymock

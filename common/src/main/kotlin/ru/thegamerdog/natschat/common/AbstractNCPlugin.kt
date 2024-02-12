@@ -5,7 +5,6 @@ import ru.thegamerdog.natschat.common.player.NatsChatPlayer
 import java.util.*
 import java.util.logging.Logger
 
-
 abstract class AbstractNCPlugin {
     lateinit var natsService: NatsService
 

@@ -5,7 +5,9 @@ import org.bukkit.entity.Player
 import ru.thegamerdog.natschat.common.player.AbstractPlayerFactory
 import java.util.*
 
-class PlayerFactory : AbstractPlayerFactory<Player>() {
+class PlayerFactory(
+    private val plugin: NCPlugin
+) : AbstractPlayerFactory<Player>() {
     override fun getUUID(player: Player): UUID {
         return player.uniqueId
     }
@@ -15,6 +17,6 @@ class PlayerFactory : AbstractPlayerFactory<Player>() {
     }
 
     override fun sendMessage(player: Player, message: Component) {
-        player.sendMessage(message)
+        plugin.audiences.player(player).sendMessage(message)
     }
 }

@@ -4,7 +4,7 @@
 
 ### Features
 * Join/Leave from channel
-* Paper ~1.12.2
+* Support Bukkit 1.15.2 or newer
 
 ### Building
 `nats-mine-chat` uses Gradle to building
@@ -27,13 +27,13 @@ soon...
 
 **TODO**
 
-1. [ ] Improve support by switching to Spigot
+1. [X] Improve support by switching to Spigot
 2. [ ] Multi-channels
 3. [ ] Channels moderation system
 4. [ ] Errors handling
 5. [ ] Prefix/Suffix
 6. [ ] Detailed config
-7. [ ] Spoonge api
+7. [ ] Sponge api
 8. [ ] Fabric api
 9. [ ] Forge api
 10. [ ] Tests
@@ -42,5 +42,5 @@ soon...
 
 Discord/Telegram: @TheGamerDog
 
-¯\_(ツ)_/¯
+¯\\\_(ツ)\_/¯
 

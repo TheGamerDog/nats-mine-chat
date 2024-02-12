@@ -1,16 +1,18 @@
 package ru.thegamerdog.natschat.bukkit
 
+import net.kyori.adventure.platform.bukkit.BukkitAudiences
 import ru.thegamerdog.natschat.bukkit.commands.NatsCommand
 import ru.thegamerdog.natschat.bukkit.listeners.ChatListener
+import ru.thegamerdog.natschat.bukkit.listeners.JoinListener
 import ru.thegamerdog.natschat.common.AbstractNCPlugin
 import ru.thegamerdog.natschat.common.config.Config
-import ru.thegamerdog.natschat.bukkit.listeners.JoinListener
 import java.util.logging.Logger
 
 class NCPlugin(
     private val bootstrap: NCBootstrap
 ) : AbstractNCPlugin() {
-    val playerFactory = PlayerFactory()
+    val playerFactory = PlayerFactory(this)
+    var audiences: BukkitAudiences = BukkitAudiences.create(bootstrap)
 
     override fun startNats() {
         config = Config(bootstrap.dataFolder.toPath().resolve("config.yml"))
