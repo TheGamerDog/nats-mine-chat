@@ -43,4 +43,6 @@ soon...
 Discord/Telegram: @TheGamerDog
 
 ¯\\\_(ツ)\_/¯
+¯\\_(ツ)_/¯
+>>>>>>> 1b50660f68f6569028901cdeffa8def26ccc6a81
 
