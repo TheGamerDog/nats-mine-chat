@@ -2,8 +2,8 @@
 juint = "4.13.2"
 easymock = "5.1.0"
 adventure = "4.13.0"
-adventureText = "4.13.0-api"
-serialization = "1.6.0"
+adventureText = "4.13.0"
+serialization = "1.6.3"
 kaml = "0.56.0"
 
 [libraries]
